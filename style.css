@@ -1,54 +1,238 @@
-.hero-slider {
-    width: 100%;
-    height: 750px;
-    overflow: hidden;
-    position: relative;
-}
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
-.hero-slider .slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: slideAnimation 15s infinite ease-in-out;
-}
+	.hero-slider {
+		width: 100%;
+		height: 750px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.hero-slider .slide {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		animation: slideAnimation 15s infinite ease-in-out;
+	}
 
-.hero-slider .slide::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
-}
+	.hero-slider .slide::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4); 
+	}
+	
+	.hero-slider .slide:nth-child(1) {
+		animation-delay: 0s;
+	}
+	.hero-slider .slide:nth-child(2) {
+		animation-delay: 3s;
+	}
+	.hero-slider .slide:nth-child(3) {
+		animation-delay: 6s;
+	}
+	.hero-slider .slide:nth-child(4) {
+		animation-delay: 9s;
+	}
+	.hero-slider .slide:nth-child(5) {
+		animation-delay: 12s;
+	}
+	
+	@keyframes slideAnimation {
+		0% { opacity: 0; }
+		10% { opacity: 1; }
+		40% { opacity: 1; } 
+		50% { opacity: 0; }
+		100% { opacity: 0; }
+	}
+	
+	.hero-slider img {
+		width: 100%;
+		height: 750px;
+		object-fit: cover;
+	}
 
-.hero-slider .slide:nth-child(1) {
-    animation-delay: 0s;
+	.slider-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		text-align: center;
+		line-height: 1.2; 
+	}
+	
+	.main-text {
+		display: block;
+		font-size: 5rem;
+		font-weight: normal;
+	}
+	
+	.small-text {
+		display: block;  
+		font-size: 1.2rem; 
+		margin-top: 10px;  
+		line-height: 1.2; 
+	}
+	
+	
+.image.fit img {
+	width: 100%;
+	height: auto;
 }
-.hero-slider .slide:nth-child(2) {
-    animation-delay: 3s;
-}
-.hero-slider .slide:nth-child(3) {
-    animation-delay: 6s;
-}
-.hero-slider .slide:nth-child(4) {
-    animation-delay: 9s;
-}
-.hero-slider .slide:nth-child(5) {
-    animation-delay: 12s;
-}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
 
-@keyframes slideAnimation {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    40% { opacity: 1; } 
-    50% { opacity: 0; }
-    100% { opacity: 0; }
-}
+	body {
+		line-height: 1;
+	}
 
-.hero-slider img {
-    width: 100%;
-    height: 750px;
-    object-fit: cover;
-}
+	ol, ul {
+		list-style: none;
+	}
+
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 80rem;
+	}
+
+	
+	@-ms-viewport {
+		width: device-width;
+	}
+
+
+	html {
+		font-size: 13pt;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			html {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			html {
+				font-size: 11pt;
+			}
+
+		}
+
+		
+	body {
+		background-color: #fff;
+		color: #444;
+	}
+
+	body, input, select, textarea {
+		font-family: "Poppins", sans-serif;
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 1.65;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+	strong, b {
+		font-weight: 600;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2rem 0;
+	}
+
+		p.special {
+			text-transform: uppercase;
+			font-size: .75rem;
+			font-weight: 300;
+			margin: 0 0 .5rem 0;
+			padding: 0 0 1rem 0;
+			letter-spacing: .25rem;
+		}
+
+			p.special:after {
+				content: '';
+				position: absolute;
+				margin: auto;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 50%;
+				height: 1px;
+				background-color: rgba(0, 0, 0, 0.125);
+			}
+
+	h1, h2 {
+		font-weight: 300;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+	}
+
+		h1 a, h2 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+	input, select, textarea {
+		color: #555;
+	}
+
+	a {
+		color: #8a4680;
+	}
+
+	strong, b {
+		color: #555;
+	}
+
+	h1, h2 {
+		color: #555;
+	}

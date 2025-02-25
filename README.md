@@ -4,9 +4,10 @@ Nordic Glow Candles is a candle-making business inspired by the beauty of Icelan
 
 ## Screenshots
 ### Section 1 
-It is full-screen banner, which is an automate slider of 5 images, setting the overall theme and impression of the landing page. The logo and menu are on the top navbar, in opposite corners. 
-![image](https://github.com/user-attachments/assets/9e63d16e-2aae-434f-a441-39ad56dd9b81)
-![image](https://github.com/user-attachments/assets/1c004cd0-3a09-46ff-8538-5574e93537ad)
+It is full-screen banner, which is an automate slider of 5 images, setting the overall theme and impression of the landing page. The logo and navigation links are on the top navbar. 
+![image](https://github.com/user-attachments/assets/4dc35aba-53a9-4f62-ac92-29f55dfde6ec)
+![image](https://github.com/user-attachments/assets/7ee508f0-0228-4541-81b6-67578c199e56)
+
 
 
 ### Section 2 

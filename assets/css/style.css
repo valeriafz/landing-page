@@ -1276,9 +1276,22 @@
 				left: 2.5em;
 			}
 
-			#header.alt nav {
-				right: 2.5em;
+			nav {
+				text-align: right;
+				margin-right: 20px;
 			}
+			
+			nav a {
+				text-decoration: none;
+				color: inherit;
+				font-weight: bold;
+				margin: 0 15px;
+			}
+			
+			nav a:hover {
+				color: #ff6600; 
+			}
+			
 
 	
 

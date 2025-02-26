@@ -1103,3 +1103,42 @@
 		font-size: 0.5rem;
 	}
 }
+
+.mobile-only {
+    display: none; 
+}
+
+.mobile-only-title,
+.mobile-only-image,
+.mobile-only-text {
+    display: none; 
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-only {
+        display: block; 
+        text-align: center; 
+        padding: 2em 1em; 
+        background-color: #f2f2f2; 
+    }
+
+    .mobile-only-title {
+        display: block; 
+        font-size: 1.5rem; 
+        color: #333; 
+        margin-bottom: 1rem; 
+    }
+
+    .mobile-only-image {
+        display: block; 
+        max-width: 80%; 
+        height: auto; 
+        margin: 0 auto 1rem; 
+    }
+
+    .mobile-only-text {
+        display: block; 
+        font-size: 1rem; 
+        color: #666; 
+    }
+}

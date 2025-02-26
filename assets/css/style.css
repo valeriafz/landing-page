@@ -545,7 +545,7 @@
 				z-index: 1;
 			}
 
-	/* Existing CSS remains the same until the grid-style and gallery sections */
+/* Existing CSS remains the same until the grid-style and gallery sections */
 
 .grid-style {
     width: 100%;
@@ -587,12 +587,22 @@
     margin: 0;
 }
 
-/* Update for mobile devices */
 @media screen and (max-width: 768px) {
+	.grid-style{
+		gap: 1rem;
+	}
     .grid-style > * {
-        width: 100%; /* One box per row */
-        padding: 1rem 0; /* Adjust padding for mobile */
+        width: 100%; 
+        padding: 1rem 0; 
     }
+
+	.header p {
+		font-size: 0.5rem;
+	}
+
+	h2{
+		font-size: 1rem ;
+	}
 
     .grid-style > :nth-child(-n + 2) {
         padding-top: 0;
@@ -604,9 +614,33 @@
 
     .grid-style > :nth-child(2n + 1),
     .grid-style > :nth-child(2n) {
-        width: 100%; /* Full width for all items */
+        width: 100%;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .box .content {
+        padding: 1.5rem; 
+    }
+
+    .box header h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 1rem; 
+    }
+
+    .box header p {
+        font-size: 0.5rem; 
+    }
+
+    .box p {
+        font-size: 0.5rem; 
+    }
+
+    .button {
+        font-size: 0.6rem; 
+        height: 2.5rem;
+        line-height: 2.5rem; 
+        padding: 0 1rem;
     }
 }
 
@@ -619,7 +653,7 @@
 }
 
 .gallery > * {
-    width: 50%; /* Default to 2 columns */
+    width: 50%;
     padding: 2rem;
 }
 
@@ -653,11 +687,10 @@
     margin: 0;
 }
 
-/* Update for mobile devices */
 @media screen and (max-width: 768px) {
     .gallery > * {
-        width: 100%; /* One image per row */
-        padding: 1rem 0; /* Adjust padding for mobile */
+        width: 100%; 
+        padding: 1rem 0; 
     }
 
     .gallery > :nth-child(-n + 2) {
@@ -670,9 +703,17 @@
 
     .gallery > :nth-child(2n + 1),
     .gallery > :nth-child(2n) {
-        width: 100%; /* Full width for all items */
+        width: 100%; 
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .gallery .image.fit img {
+        max-width: 100%; 
+    }
+
+    .gallery .image {
+        padding: 0.5rem; 
     }
 }
 	#header {

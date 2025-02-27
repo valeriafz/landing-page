@@ -1,4 +1,4 @@
-# tum-web-lab2 
+# tum-web-landingpage
 ## Landing page topic
 Nordic Glow Candles is a candle-making business inspired by the beauty of Iceland. The candles are designed to capture the magic of the aurora borealis, or northern lights, which is the on-going theme of the website, creating a dark aesthetic. 
 

@@ -1,17 +1,32 @@
 <!DOCTYPE HTML>
-<html><head><title>Nordic Glow Candles</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<html><head>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"><title>Nordic Glow Candles</title><meta charset="utf-8"><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/style.css"></head><body>
 
 		
 			<header id="header" class="alt">
-				<div class="logo">
-					<a href="index.html">Nordic <span>Glow Candles</span></a>
-				</div>
-				<nav>
-					<a href="#one">About Us</a>
-					<a href="#three">Bestsellers</a>
-					<a href="#four">Subscribe</a>
+				<nav class="bg-transparent">
+					<div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+						<a href="index.html" class="flex items-center">
+							<div class="logo text-2xl font-light text-white">
+								Nordic <span class="text-gray-400">Glow Candles</span>
+							</div>
+						</a>
+						<div class="hidden md:block">
+							<ul class="font-medium flex space-x-8">
+								<li>
+									<a href="#one" class="block py-2 px-3 text-white hover:text-orange-500 md:p-0">About us</a>
+								</li>
+								<li>
+									<a href="#two" class="block py-2 px-3 text-white hover:text-orange-500 md:p-0">Bestsellers</a>
+								</li>
+								<li>
+									<a href="#four" class="block py-2 px-3 text-white hover:text-orange-500 md:p-0">Subscribe</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</nav>
-			</header><nav id="menu"></nav>
+			</header>
 
 			<div class="hero-slider">
 				<div class="slide">
@@ -37,69 +52,105 @@
 			</div>
 			
 
-				<section id="one" class="wrapper style2"><div class="inner">
-					<div class="grid-style">
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic02.jpg" alt="" width="600" height="300"></div>
-								<div class="content">
-									<header class="align-center"><p>Everything started from a trip in Iceland</p>
-										<h2>Our inspiration</h2>
-									</header><p > Our trip to Iceland was a breathtaking journey through majestic landscapes, with snow-capped mountains, sparkling glaciers, and the serene northern lights. The crisp air, volcanic earth, and refreshing Icelandic springs inspired us to create Nordic Candles—infused with scents of fresh pine, sea breeze, and mineral-rich earth, capturing the essence of these magical places in every handcrafted piece.</p>
-									<footer class="align-center"><a href="#" class="button alt">Learn More</a>
-									</footer></div>
-							</div>
-						</div>
+				<section id="one" class="wrapper style2">
+					<div class="inner">
 
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/pic03.jpg" alt="" width="600" height="300"></div>
-								<div class="content">
-									<header class="align-center"><p>Bring warmth to your home</p>
-										<h2 >Candle Making Process</h2>
-									</header><p > Our candle-making process is a blend of artistry and craftsmanship, with years of experience in the back. We handpick the finest natural waxes and essential oils, carefully blending scents inspired by nature’s beauty. Each candle is poured by hand, ensuring precision and quality. The final touch is adding eco-friendly wicks, creating a warm, glowing atmosphere in every home.</p>
-									<footer class="align-center"><a href="#" class="button alt">Learn More</a>
-									</footer></div>
+						<div class="flex justify-center items-center flex-wrap gap-8">
+							<!-- First Card -->
+							<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+								<a href="#">
+									<img class="rounded-t-lg w-full h-56 object-cover" src="images/pic02.jpg" alt="Our inspiration">
+								</a>
+								<div class="p-5 text-center">
+									<a href="#">
+										<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Our Inspiration</h5>
+									</a>
+									<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+										Our trip to Iceland was a breathtaking journey through majestic landscapes, with sparkling glaciers, and the serene northern lights. The crisp air, volcanic earth, and refreshing Icelandic springs inspired us to create Nordic Candles—infused with scents of fresh pine, sea breeze, and mineral-rich earth, capturing the essence of these magical places in every handcrafted piece.
+									</p>
+									<a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 border border-gray-500 rounded-lg hover:bg-gray-500 hover:text-white transition duration-300">
+										Learn More
+									</a>
+								</div>
 							</div>
-						</div>
-
-					</div>
+						
+							
+							<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+								<a href="#">
+									<img class="rounded-t-lg w-full h-56 object-cover" src="images/pic03.jpg" alt="Candle Making Process">
+								</a>
+								<div class="p-5 text-center">
+									<a href="#">
+										<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Candle Making Process</h5>
+									</a>
+									<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+										Our candle-making process is a blend of artistry and craftsmanship, with years of experience. We handpick the finest natural waxes and essential oils, carefully blending scents inspired by nature’s beauty. Each candle is poured by hand, ensuring precision and quality. The final touch is adding eco-friendly wicks, creating a warm, glowing atmosphere in every home.
+									</p>
+									<a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-700 border border-gray-500 rounded-lg hover:bg-gray-500 hover:text-white transition duration-300">
+										Learn More
+									</a>
+								</div>
+							</div>
+						</div>						
 				</div>
 			</section>
 			
 			 <section id="two" class="wrapper style3"><div class="inner">
-					<header class="align-center"><p>We also make original candles, up to the customer's taste </p>
-						<h2>Make a customized order</h2>
+					<header class="align-center"><p>We are here with a mission. To bring Iceland closer to you. </p>
+						<h2>Take a look at our bestsellers</h2>
 					</header></div>
 			</section>
 			
 			 <section id="three" class="wrapper style2"><div class="inner">
-					<header class="align-center"><p class="special">We are here with a mission. To bring Iceland closer to you.</p>
-						<h2>Take a look at our bestsellers</h2>
-					</header><div class="gallery">
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic01.jpg" alt="" width="600" height="300"></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic02.jpg" alt="" width="600" height="300"></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic03.jpg" alt="" width="600" height="300"></a>
-							</div>
-						</div>
-						<div>
-							<div class="image fit">
-								<a href="#"><img src="images/pic04.jpg" alt="" width="600" height="300"></a>
-							</div>
-						</div>
-					</div>
+						
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/64/54/f7/6454f75deaef2f0d2142980565f583db.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/9e/42/9c/9e429c71311da91b1caa1719aa8d412c.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/c3/c0/96/c3c0967d4968b6615908210dc0b806d4.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/06/d9/7a/06d97a1258a6fa55d28cc49031725dca.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/07/77/bf/0777bf5d59eabbc53bcce81e01dcc684.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/48/8a/c8/488ac80029db354dde84ef0965a0cb47.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/5f/dd/4d/5fdd4d64d23a716b55181f84f16ca188.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/474x/98/7f/bc/987fbcfa9a705c1c3e222b66469f96f2.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/5a/89/8d/5a898d1596397efbe29df86d7c6ed897.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/29/bd/88/29bd88cab4cad726de37491ed62b47c8.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/a2/88/a3/a288a30355ba5da7a69d2a24def422b5.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://i.pinimg.com/736x/f9/73/1a/f9731a0a800071c59881f3fab2bf1338.jpg" alt="">
+        </div>
+    </div>
+</div>
+
 				</div>
 			</section>
 
